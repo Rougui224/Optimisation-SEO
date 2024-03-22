@@ -1,0 +1,6 @@
+# Default ignored files
+comparaisons/
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
