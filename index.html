@@ -13,9 +13,9 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <div class="top-header">
-      <h3 class="name">Nina Carducci</h3>
-      <div class="nav">
+    <header class="top-header">
+      <h1 class="name">Nina Carducci</h1>
+      <nav class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -28,60 +28,76 @@
               target="_blank"
               ><img
                 src="assets/images/photographe_bordeaux_instagram.webp"
-                alt=""
+                alt="logo d'Instagram"
             /></a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div id="header">
+      </nav>
+    </header>
+    <!-- Utilisation de <section> pour envelopper la section de la bannière -->
+    <section id="header">
+      <!-- ajout des atribut role et aria-label pour indiquer le role de l'en-tête et pour fournir une etiquette accessible dans la balise div -->
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
         data-bs-ride="carousel"
+        role="banner"
+        aria-label="carousel"
       >
-        <div class="carousel-indicators">
-          <button
+        <!-- Utilisation de balises <ol> et <li> pour structurer les indicateurs au lieu des boutons -->
+        <ol class="carousel-indicators">
+          <li
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
             aria-label="Slide 1"
-          ></button>
-          <button
+          ></li>
+          <li
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="1"
             aria-label="Slide 2"
-          ></button>
-          <button
+          ></li>
+          <li
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="2"
             aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+          ></li>
+        </ol>
+        <!-- Ajout de l'attribut role avec la valeur "listbox" pour indiquer le rôle de la liste -->
+        <div class="carousel-inner" role="listbox">
+          <!-- Ajout de l'attribut role avec la valeur "option" pour indiquer le rôle de chaque élément -->
+
+          <div class="carousel-item active" role="option">
+            <!-- L'attribut loading contrôle le moment où l'image est chargée  -->
+            <!-- L'attribut decoding avec la valeur "async" pour indiquer au navigateur de décoder l'image de manière asynchrone, ce qui peut accélérer le chargement de la page. -->
             <img
               src="./assets/images/slider/photographe_bordeaux_hommeEnCostume.webp"
               class="d-block w-100"
-              alt="..."
+              loading="eager"
+              decoding="async"
+              alt="Photographe à Bordeaux - Homme en costume"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" role="option">
             <img
               src="./assets/images/slider/photographe_bordeaux_concert.webp"
               class="d-block w-100"
-              alt="..."
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - foule en Concert"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" role="option">
             <img
               src="./assets/images/slider/photographe_bordeaux_mariage_couple_dance.webp"
               class="d-block w-100"
-              alt="..."
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - danse du couple au mariage"
             />
           </div>
         </div>
@@ -104,18 +120,26 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-    <div id="about">
+    </section>
+    <!-- Utilisation de <section> pour envelopper la section a propos -->
+    <section id="about">
       <div class="picture left">
-        <img src="./assets/images/photographe_bordeaux_nina.webp" />
+        <img
+          src="./assets/images/photographe_bordeaux_nina.webp"
+          loading="lazy"
+          decoding="async"
+          alt="Photographe à Bordeaux - Nina Carducci"
+        />
       </div>
       <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
+        <!-- Changement de <h3> à <h2> pour indiquer un niveau de titre plus important -->
+        <h2 class="about-me__title">A propos de moi</h2>
+        <!-- Changement de <h6> à <P> pour indiquer une description au lieu d'un titre -->
+        <p class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
+        </p>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -127,78 +151,115 @@
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
       </div>
-    </div>
-    <div id="gallery">
-      <h3 class="title">Portfolio</h3>
+    </section>
+    <!-- Utilisation de <section> pour envelopper la section Portfolio -->
+    <!-- avec  l'attribut aria-label avec une description appropriée, nous indiquons aux utilisateurs des technologies d'assistance que la section contient un portfolio de photos. -->
+    <section id="gallery" aria-label="Portfolio de photos">
+      <h2 class="title">Portfolio</h2>
+      <!-- Changement de <h3> à <h2> pour indiquer un niveau de titre plus important -->
       <div class="container py-3">
         <div class="gallery" style="display: none">
+          <!-- L'attribut alt pour decrire l'image  -->
+          <!-- L'attribut loading contrôle le moment où l'image est chargée  -->
+          <!-- L'attribut decoding avec la valeur "async" pour indiquer au navigateur de décoder l'image de manière asynchrone, ce qui peut accélérer le chargement de la page. -->
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/photographe-bordeaux_concert_foule.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - foule en concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/photographe_bordeaux_homme_en_entreprise.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - Homme en entreprise"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/photographe_bordeaux_femmes_en_entreprise.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - femmes en entreprise"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/photographe_bordeaux_main_dans_la_main_mariage.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - couple marié main dans la main"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/photographe_bordeaux_portrait_homme.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - portrait Homme"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/photographe_bordeaux_mariage_couple.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - couple marié"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/photographe_bordeaux_portrait_femme.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - portrait femme"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/photographe_bordeaux_concert_artiste.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - artiste en concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/photographe_bordeaux_femme_avec_laptop.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - femme avec laptop"
           />
         </div>
       </div>
       <div class="quote">
         <figure>
           <blockquote>
-            <h1 class="quote__text">
+            <!-- Utilisation de <p> au lieu de <h1> pour une citation -->
+            <p class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h1>
+            </p>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-    </div>
-    <div id="services">
+    </section>
+    <!-- Utilisation de <section> pour envelopper la section de service -->
+    <!--  j'ai egalement ajouté l'attribut role="region" avec une étiquette aria-label pour indiquer aux technologies d'assistance qu'il s'agit d'une région de contenu nommée "Mes services". -->
+    <section id="services" role="region" aria-label="Mes services">
       <h3 class="title">Mes services</h3>
       <div class="container">
         <div class="service">
           <div class="service__description">
-            <h3>Shooting photo</h3>
+            <!-- Utilisation de <h4> au lieu de <h3> pour les titres de services -->
+            <h4>Shooting photo</h4>
             <p>
               Pour capturer vos moments les plus précieux et garder un souvenir
               impérissable. Je me déplace en Île-de-France pour réaliser vos
@@ -206,51 +267,54 @@
             </p>
           </div>
           <div class="service__price">
-            <h4>350€/demi journée</h4>
+            <!-- Utilisation de <h5> au lieu de <h4> pour les prix -->
+            <h5>350€/demi journée</h5>
             <span>Matériel, déplacement inclus</span>
           </div>
         </div>
         <div class="service">
           <div class="service__description">
-            <h3>Retouches</h3>
+            <h4>Retouches</h4>
             <p>
               Vous souhaitez retoucher vos photos pour un résultat professionnel
               ? Bénéficier d’un rendu optimal pour vos publications
             </p>
           </div>
           <div class="service__price">
-            <h4>50€/photo</h4>
+            <h5>50€/photo</h5>
             <span>2 AR par photo</span>
           </div>
         </div>
         <div class="service">
           <div class="service__description">
-            <h3>Album photos</h3>
+            <h4>Album photos</h4>
             <p>
               Partagez avec vos proches et vos clients les photos des moments
               partagés ensemble à travers un album photo personnalisé
             </p>
           </div>
           <div class="service__price">
-            <h4>400€ album A4</h4>
+            <h5>400€ album A4</h5>
             <span>30 pages recto/verso</span>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div class="quote">
       <figure>
         <blockquote>
-          <h1 class="quote__text">
+          <!-- l'utilisation de <p> pour une sitation au lieu de <h1> -->
+          <p class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
-          </h1>
+          </p>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </div>
-    <div id="contact">
+    <!-- Utilisation de <section> pour envelopper la section de contact -->
+    <section id="contact">
       <div class="container">
         <div class="form-container">
           <h3>Une question ? Une demande de devis ?</h3>
@@ -258,11 +322,12 @@
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <form action="" method="post">
-            <label>Nom</label>
+            <!-- Ajout d'attributs for et id pour associer les labels aux champs de formulaire -->
+            <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" />
-            <label>Email</label>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" />
-            <label>Message</label>
+            <label for="message">Message</label>
             <textarea
               name="message"
               id="message"
@@ -273,10 +338,15 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/photographe_bordeaux_camera.webp" />
+          <img
+            src="./assets/images/photographe_bordeaux_camera.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - Caméra"
+          />
         </div>
       </div>
-    </div>
+    </section>
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
