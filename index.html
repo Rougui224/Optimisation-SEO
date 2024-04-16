@@ -1,278 +1,410 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/style.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-    rel="stylesheet" >
-  <meta charset="UTF-8">
-<meta name="description" content="Explorez le portfolio en ligne de Nina Carducci. Des portraits intimes aux paysages époustouflants, chaque image raconte une histoire unique. Spécialisée dans les portraits, événements d'entreprise, mariages, concerts et bien plus encore, Nina capture des moments inoubliables pour vous.">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Explorez le portfolio en ligne de Nina Carducci. Des portraits intimes aux paysages époustouflants, chaque image raconte une histoire unique. Spécialisée dans les portraits, événements d'entreprise, mariages, concerts et bien plus encore, Nina capture des moments inoubliables pour vous."
+    />
 
-  <meta property="og:title" content="Nina Carducci - Photographe à Bordeaux">
-  <!-- lien de l'image en ligne -->
-  <!-- La taille idéale pour les images de la balise OG est 1200 x 628 pixels. -->
-  <meta property="og:image" content="./assets/images/photographe_bordeaux_nina.webp">
-  <meta property="og:description" content="Explorez le portfolio en ligne de Nina Carducci. Des portraits intimes aux paysages époustouflants, chaque image raconte une histoire unique. Spécialisée dans les portraits, événements d'entreprise, mariages, concerts et bien plus encore, Nina capture des moments inoubliables pour vous.">
-  <meta property="og:site_name" content="Portfolio de Nina Carducci">
-  <meta property="og:url" content="https://ninacarducci.github.io/">
-  <meta property="og:type" content="web site">
-  <!-- Pour X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:card" content="photo">
-  <!-- La taille idéale pour les images de la Twitter Card est 506 x 628 pixels. -->
-  <meta name="twitter:image" content="./assets/images/photographe_bordeaux_nina.webp">
-  <meta name="twitter:description" content="Explorez le portfolio en ligne de Nina Carducci. Des portraits intimes aux paysages époustouflants, chaque image raconte une histoire unique. Spécialisée dans les portraits, événements d'entreprise, mariages, concerts et bien plus encore, Nina capture des moments inoubliables pour vous.">
-  <meta name="twitter:url" content="https://ninacarducci.github.io/">
-  <title>Nina Carducci - Photographe à bordeaux</title>
-</head>
+    <meta
+      property="og:title"
+      content="Nina Carducci - Photographe à Bordeaux"
+    />
+    <!-- lien de l'image en ligne -->
+    <!-- La taille idéale pour les images de la balise OG est 1200 x 628 pixels. -->
+    <meta
+      property="og:image"
+      content="./assets/images/photographe_bordeaux_nina.webp"
+    />
+    <meta
+      property="og:description"
+      content="Explorez le portfolio en ligne de Nina Carducci. Des portraits intimes aux paysages époustouflants, chaque image raconte une histoire unique. Spécialisée dans les portraits, événements d'entreprise, mariages, concerts et bien plus encore, Nina capture des moments inoubliables pour vous."
+    />
+    <meta property="og:site_name" content="Portfolio de Nina Carducci" />
+    <meta property="og:url" content="https://ninacarducci.github.io/" />
+    <meta property="og:type" content="web site" />
+    <!-- Pour X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="photo" />
+    <!-- La taille idéale pour les images de la Twitter Card est 506 x 628 pixels. -->
+    <meta
+      name="twitter:image"
+      content="./assets/images/photographe_bordeaux_nina.webp"
+    />
+    <meta
+      name="twitter:description"
+      content="Explorez le portfolio en ligne de Nina Carducci. Des portraits intimes aux paysages époustouflants, chaque image raconte une histoire unique. Spécialisée dans les portraits, événements d'entreprise, mariages, concerts et bien plus encore, Nina capture des moments inoubliables pour vous."
+    />
+    <meta name="twitter:url" content="https://ninacarducci.github.io/" />
+    <title>Nina Carducci - Photographe à bordeaux</title>
+  </head>
 
-<body>
-  <header class="top-header">
-    <h1 class="name">Nina Carducci</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#gallery">Galerie</a></li>
-        <li><a href="#services">Service</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img
-              src="assets/images/photographe_bordeaux_instagram.webp" alt="logo d'Instagram"></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Utilisation de <section> pour envelopper la section de la bannière -->
-  <div id="header">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <!-- Utilisation de balises <ol> et <li> pour structurer les indicateurs au lieu des boutons -->
-      <ol class="carousel-indicators">
-        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <!-- L'attribut loading contrôle le moment où l'image est chargée  -->
-          <!-- L'attribut decoding avec la valeur "async" pour indiquer au navigateur de décoder l'image de manière asynchrone, ce qui peut accélérer le chargement de la page. -->
-          <img src="./assets/images/slider/photographe_bordeaux_hommeEnCostume.webp" class="d-block w-100"
-            loading="eager" decoding="async" alt="Photographe à Bordeaux - Homme en costume">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/images/slider/photographe_bordeaux_concert.webp" class="d-block w-100" loading="lazy"
-            decoding="async" alt="Photographe à Bordeaux - foule en Concert">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/images/slider/photographe_bordeaux_mariage_couple_dance.webp" class="d-block w-100"
-            loading="lazy" decoding="async" alt="Photographe à Bordeaux - danse du couple au mariage">
+  <body>
+    <header class="top-header">
+      <h1 class="name">Nina Carducci</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+            >
+              <img
+                src="assets/images/photographe_bordeaux_instagram.webp"
+                alt="logo d'Instagram"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="header">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- Utilisation de balises <ol> et <li> pour structurer les indicateurs au lieu des boutons -->
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+            ></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- L'attribut loading contrôle le moment où l'image est chargée  -->
+              <!-- L'attribut decoding avec la valeur "async" pour indiquer au navigateur de décoder l'image de manière asynchrone, ce qui peut accélérer le chargement de la page. -->
+              <img
+                src="./assets/images/slider/photographe_bordeaux_hommeEnCostume.webp"
+                class="d-block w-100"
+                loading="eager"
+                decoding="async"
+                alt="Photographe à Bordeaux - Homme en costume"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider/photographe_bordeaux_concert.webp"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+                alt="Photographe à Bordeaux - foule en Concert"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider/photographe_bordeaux_mariage_couple_dance.webp"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+                alt="Photographe à Bordeaux - danse du couple au mariage"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <!-- Utilisation de <section> pour envelopper la section a propos -->
-  <section id="about">
-    <div class="picture left">
-      <img src="./assets/images/photographe_bordeaux_nina.webp" loading="lazy" decoding="async"
-        alt="Photographe à Bordeaux - Nina Carducci">
-    </div>
-    <div id="about-me">
-      <!-- Changement de <h3> à <h2> pour indiquer un niveau de titre plus important -->
-      <h2 class="about-me__title">A propos de moi</h2>
-      <!-- Changement de <h6> à <P> pour indiquer une description au lieu d'un titre -->
-      <p class="about-me__introduction">
-        Devenir photographe était pour moi une évidence. Comme si j’y étais
-        prédestiné. Saisir un moment, une émotion, une situation, un endroit,
-        une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-      </p>
-      <p>
-        Nous passons notre vie à chercher le bonheur, et lorsque nous y
-        touchons, nous n’avons qu’une envie : le figer au travers de
-        photographies pour le savourer avec les personnes qui sont importantes
-        à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
-        propose : saisir ces merveilleux moments au travers de mon regard, mon
-        approche, ma technique. Rendre ces moments immortels, afin que vous
-        puissiez y puiser de l’amour, du bonheur, de la tendresse et de
-        lumière à chaque fois que vous poserez les yeux sur vos photos.
-      </p>
-    </div>
-  </section>
-  <!-- Utilisation de <section> pour envelopper la section Portfolio -->
-  <section id="gallery">
-    <h2 class="title">Portfolio</h2>
-    <!-- Changement de <h3> à <h2> pour indiquer un niveau de titre plus important -->
-    <div class="container py-3">
-      <div class="gallery" style="display: none">
-        <!-- L'attribut alt pour decrire l'image  -->
-        <!-- L'attribut loading contrôle le moment où l'image est chargée  -->
-        <!-- L'attribut decoding avec la valeur "async" pour indiquer au navigateur de décoder l'image de manière asynchrone, ce qui peut accélérer le chargement de la page. -->
-        <img data-gallery-tag="Concert" class="gallery-item"
-          src="./assets/images/gallery/concerts/photographe-bordeaux_concert_foule.webp" loading="lazy" decoding="async"
-          alt="Photographe à Bordeaux - foule en concert">
-        <img data-gallery-tag="Entreprises" class="gallery-item"
-          src="./assets/images/gallery/entreprise/photographe_bordeaux_homme_en_entreprise.webp" loading="lazy"
-          decoding="async" alt="Photographe à Bordeaux - Homme en entreprise">
-        <img data-gallery-tag="Entreprises" class="gallery-item"
-          src="./assets/images/gallery/entreprise/photographe_bordeaux_femmes_en_entreprise.webp" loading="lazy"
-          decoding="async" alt="Photographe à Bordeaux - femmes en entreprise">
-        <img data-gallery-tag="Mariages" class="gallery-item"
-          src="./assets/images/gallery/mariage/photographe_bordeaux_main_dans_la_main_mariage.webp" loading="lazy"
-          decoding="async" alt="Photographe à Bordeaux - couple marié main dans la main">
-        <img data-gallery-tag="Portrait" class="gallery-item"
-          src="./assets/images/gallery/portraits/photographe_bordeaux_portrait_homme.webp" loading="lazy"
-          decoding="async" alt="Photographe à Bordeaux - portrait Homme">
-        <img data-gallery-tag="Mariages" class="gallery-item"
-          src="./assets/images/gallery/mariage/photographe_bordeaux_mariage_couple.webp" loading="lazy" decoding="async"
-          alt="Photographe à Bordeaux - couple marié">
-        <img data-gallery-tag="Portrait" class="gallery-item"
-          src="./assets/images/gallery/portraits/photographe_bordeaux_portrait_femme.webp" loading="lazy"
-          decoding="async" alt="Photographe à Bordeaux - portrait femme">
-        <img data-gallery-tag="Concert" class="gallery-item"
-          src="./assets/images/gallery/concerts/photographe_bordeaux_concert_artiste.webp" loading="lazy"
-          decoding="async" alt="Photographe à Bordeaux - artiste en concert">
-        <img data-gallery-tag="Entreprises" class="gallery-item"
-          src="./assets/images/gallery/entreprise/photographe_bordeaux_femme_avec_laptop.webp" loading="lazy"
-          decoding="async" alt="Photographe à Bordeaux - femme avec laptop">
-      </div>
-    </div>
-    <div class="quote">
-      <figure>
-        <blockquote>
-          <!-- Utilisation de <p> au lieu de <h1> pour une citation -->
-          <p class="quote__text">
-            Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
-            qu’un fait est traduit en photo, il cesse d’être un fait pour
-            devenir une opinion. L’inexactitude n’existe pas en photographie.
-            Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+      <!-- Utilisation de <section> pour envelopper la section a propos -->
+      <section id="about">
+        <div class="picture left">
+          <img
+            src="./assets/images/photographe_bordeaux_nina.webp"
+            loading="lazy"
+            decoding="async"
+            alt="Photographe à Bordeaux - Nina Carducci"
+          />
+        </div>
+        <div id="about-me">
+          <!-- Changement de <h3> à <h2> pour indiquer un niveau de titre plus important -->
+          <h2 class="about-me__title">A propos de moi</h2>
+          <!-- Changement de <h6> à <P> pour indiquer une description au lieu d'un titre -->
+          <p class="about-me__introduction">
+            Devenir photographe était pour moi une évidence. Comme si j’y étais
+            prédestiné. Saisir un moment, une émotion, une situation, un
+            endroit, une lumière et les rendre immortels, voilà ce qui me fait
+            vibrer.
           </p>
-        </blockquote>
-        <figcaption class="quote__author">- Richard Avedon</figcaption>
-      </figure>
-    </div>
-  </section>
-  <!-- Utilisation de <section> pour envelopper la section de service -->
-  <section id="services">
-    <h3 class="title">Mes services</h3>
-    <div class="container">
-      <div class="service">
-        <div class="service__description">
-          <!-- Utilisation de <h4> au lieu de <h3> pour les titres de services -->
-          <h4>Shooting photo</h4>
           <p>
-            Pour capturer vos moments les plus précieux et garder un souvenir
-            impérissable. Je me déplace en Île-de-France pour réaliser vos
-            photos
+            Nous passons notre vie à chercher le bonheur, et lorsque nous y
+            touchons, nous n’avons qu’une envie : le figer au travers de
+            photographies pour le savourer avec les personnes qui sont
+            importantes à nos yeux, ou le partager au plus grand nombre. C’est
+            ce que je vous propose : saisir ces merveilleux moments au travers
+            de mon regard, mon approche, ma technique. Rendre ces moments
+            immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
+            de la tendresse et de lumière à chaque fois que vous poserez les
+            yeux sur vos photos.
           </p>
         </div>
-        <div class="service__price">
-          <!-- Utilisation de <h5> au lieu de <h4> pour les prix -->
-          <h5>350€/demi journée</h5>
-          <span>Matériel, déplacement inclus</span>
+      </section>
+      <!-- Utilisation de <section> pour envelopper la section Portfolio -->
+      <section id="gallery">
+        <h2 class="title">Portfolio</h2>
+        <!-- Changement de <h3> à <h2> pour indiquer un niveau de titre plus important -->
+        <div class="container py-3">
+          <div class="gallery" style="display: none">
+            <!-- L'attribut alt pour decrire l'image  -->
+            <!-- L'attribut loading contrôle le moment où l'image est chargée  -->
+            <!-- L'attribut decoding avec la valeur "async" pour indiquer au navigateur de décoder l'image de manière asynchrone, ce qui peut accélérer le chargement de la page. -->
+            <img
+              data-gallery-tag="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/concerts/photographe-bordeaux_concert_foule.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - foule en concert"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/photographe_bordeaux_homme_en_entreprise.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - Homme en entreprise"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/photographe_bordeaux_femmes_en_entreprise.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - femmes en entreprise"
+            />
+            <img
+              data-gallery-tag="Mariages"
+              class="gallery-item"
+              src="./assets/images/gallery/mariage/photographe_bordeaux_main_dans_la_main_mariage.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - couple marié main dans la main"
+            />
+            <img
+              data-gallery-tag="Portrait"
+              class="gallery-item"
+              src="./assets/images/gallery/portraits/photographe_bordeaux_portrait_homme.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - portrait Homme"
+            />
+            <img
+              data-gallery-tag="Mariages"
+              class="gallery-item"
+              src="./assets/images/gallery/mariage/photographe_bordeaux_mariage_couple.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - couple marié"
+            />
+            <img
+              data-gallery-tag="Portrait"
+              class="gallery-item"
+              src="./assets/images/gallery/portraits/photographe_bordeaux_portrait_femme.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - portrait femme"
+            />
+            <img
+              data-gallery-tag="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/concerts/photographe_bordeaux_concert_artiste.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - artiste en concert"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/photographe_bordeaux_femme_avec_laptop.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - femme avec laptop"
+            />
+          </div>
         </div>
-      </div>
-      <div class="service">
-        <div class="service__description">
-          <h4>Retouches</h4>
-          <p>
-            Vous souhaitez retoucher vos photos pour un résultat professionnel
-            ? Bénéficier d’un rendu optimal pour vos publications
-          </p>
+        <div class="quote">
+          <figure>
+            <blockquote>
+              <!-- Utilisation de <p> au lieu de <h1> pour une citation -->
+              <p class="quote__text">
+                Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
+                ou qu’un fait est traduit en photo, il cesse d’être un fait pour
+                devenir une opinion. L’inexactitude n’existe pas en
+                photographie. Toutes les photos sont exactes. Aucune d’elles
+                n’est la vérité.
+              </p>
+            </blockquote>
+            <figcaption class="quote__author">- Richard Avedon</figcaption>
+          </figure>
         </div>
-        <div class="service__price">
-          <h5>50€/photo</h5>
-          <span>2 AR par photo</span>
+      </section>
+      <!-- Utilisation de <section> pour envelopper la section de service -->
+      <section id="services">
+        <h2 class="title">Mes services</h2>
+        <div class="container">
+          <div class="service">
+            <div class="service__description">
+              <!-- Utilisation de <h4> au lieu de <h3> pour les titres de services -->
+              <h3>Shooting photo</h3>
+              <p>
+                Pour capturer vos moments les plus précieux et garder un
+                souvenir impérissable. Je me déplace en Île-de-France pour
+                réaliser vos photos
+              </p>
+            </div>
+            <div class="service__price">
+              <!-- Utilisation de <h5> au lieu de <h4> pour les prix -->
+              <h4>350€/demi journée</h4>
+              <span>Matériel, déplacement inclus</span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__description">
+              <h3>Retouches</h3>
+              <p>
+                Vous souhaitez retoucher vos photos pour un résultat
+                professionnel ? Bénéficier d’un rendu optimal pour vos
+                publications
+              </p>
+            </div>
+            <div class="service__price">
+              <h4>50€/photo</h4>
+              <span>2 AR par photo</span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__description">
+              <h3>Album photos</h3>
+              <p>
+                Partagez avec vos proches et vos clients les photos des moments
+                partagés ensemble à travers un album photo personnalisé
+              </p>
+            </div>
+            <div class="service__price">
+              <h4>400€ album A4</h4>
+              <span>30 pages recto/verso</span>
+            </div>
+          </div>
         </div>
+      </section>
+      <div class="quote">
+        <figure>
+          <blockquote>
+            <!-- l'utilisation de <p> pour une sitation au lieu de <h1> -->
+            <p class="quote__text">
+              De manière inconsciente, je crois, je guette un regard, une
+              expression, des traits ou une nostalgie capable de résumer ou plus
+              exactement de révéler une vie
+            </p>
+          </blockquote>
+          <figcaption class="quote__author">- Richard Avedon</figcaption>
+        </figure>
       </div>
-      <div class="service">
-        <div class="service__description">
-          <h4>Album photos</h4>
-          <p>
-            Partagez avec vos proches et vos clients les photos des moments
-            partagés ensemble à travers un album photo personnalisé
-          </p>
+      <!-- Utilisation de <section> pour envelopper la section de contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="form-container">
+            <h2>Une question ? Une demande de devis ?</h2>
+            <p>
+              N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
+              heures
+            </p>
+            <form action="#" method="post">
+              <!-- Ajout d'attributs for et id pour associer les labels aux champs de formulaire -->
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input type="submit" value="Envoyer" />
+            </form>
+          </div>
+          <div class="picture right">
+            <img
+              src="./assets/images/photographe_bordeaux_camera.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Photographe à Bordeaux - Caméra"
+            />
+          </div>
         </div>
-        <div class="service__price">
-          <h5>400€ album A4</h5>
-          <span>30 pages recto/verso</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="quote">
-    <figure>
-      <blockquote>
-        <!-- l'utilisation de <p> pour une sitation au lieu de <h1> -->
-        <p class="quote__text">
-          De manière inconsciente, je crois, je guette un regard, une
-          expression, des traits ou une nostalgie capable de résumer ou plus
-          exactement de révéler une vie
-        </p>
-      </blockquote>
-      <figcaption class="quote__author">- Richard Avedon</figcaption>
-    </figure>
-  </div>
-  <!-- Utilisation de <section> pour envelopper la section de contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="form-container">
-        <h3>Une question ? Une demande de devis ?</h3>
-        <p>
-          N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
-        </p>
-        <form action="#" method="post">
-          <!-- Ajout d'attributs for et id pour associer les labels aux champs de formulaire -->
-          <label for="nom">Nom</label>
-          <input type="text" name="nom" id="nom">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <input type="submit" value="Envoyer">
-        </form>
-      </div>
-      <div class="picture right">
-        <img src="./assets/images/photographe_bordeaux_camera.webp" loading="lazy" decoding="async"
-          alt="Photographe à Bordeaux - Caméra">
-      </div>
-    </div>
-  </section>
-  <script src="./assets/bootstrap/bootstrap.bundle.min.js"  defer></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
-  <script src="./assets/maugallery.min.js"  defer ></script>
-  <script src="./assets/scripts.min.js"  defer></script>
-  <script type="application/ld+json">
-{
-	"@context": "http://schema.org/",
-	"@type": "Person",
-	"name": "Nina Caducci",
-	"image": "https://ninacarducci.github.io/assets/images/nina.png",
-	"url": "https://ninacarducci.github.io/",
-	"jobTitle": "Photographe ",
-	"address": {
-		"@type": "PostalAddress",
-		"streetAddress": "68 avenue Alsace-Lorraine",
-		"addressLocality": "Bordeaux",
-		"addressRegion": "Nouvelle-Aquitaine",
-		"postalCode": "33200",
-		"addressCountry": "France"
-	},
-	"sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
-}
-</script>
-</body>
-
+      </section>
+    </main>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/maugallery.min.js" defer></script>
+    <script src="./assets/scripts.min.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "description": "Photographe à Bordeaux",
+        "image": "https://ninacarducci.github.io/assets/images/nina.png",
+        "url": "https://ninacarducci.github.io/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "addressCountry": "France"
+        },
+        "telephone": "+33556677889",
+        "openingHours": "Mo-Fr 10:00-19:00",
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
+      }
+    </script>
+  </body>
 </html>
